@@ -1,0 +1,26 @@
+==8007== Cachegrind, a cache and branch-prediction profiler
+==8007== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==8007== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==8007== Command: ./a.out
+==8007== 
+--8007-- warning: L3 cache found, using its data for the LL simulation.
+Enter the size of array
+5000000
+
+Sorted array is 
+==8007== 
+==8007== I   refs:      114,601,328,342
+==8007== I1  misses:              1,154
+==8007== LLi misses:              1,142
+==8007== I1  miss rate:            0.00%
+==8007== LLi miss rate:            0.00%
+==8007== 
+==8007== D   refs:       58,012,771,031  (51,740,033,494 rd   + 6,272,737,537 wr)
+==8007== D1  misses:         13,954,829  (     6,870,369 rd   +     7,084,460 wr)
+==8007== LLd misses:          4,008,085  (     1,897,167 rd   +     2,110,918 wr)
+==8007== D1  miss rate:             0.0% (           0.0%     +           0.1%  )
+==8007== LLd miss rate:             0.0% (           0.0%     +           0.0%  )
+==8007== 
+==8007== LL refs:            13,955,983  (     6,871,523 rd   +     7,084,460 wr)
+==8007== LL misses:           4,009,227  (     1,898,309 rd   +     2,110,918 wr)
+==8007== LL miss rate:              0.0% (           0.0%     +           0.0%  )
